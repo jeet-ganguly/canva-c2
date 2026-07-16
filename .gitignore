@@ -1,0 +1,7 @@
+*.exe
+.log1/
+.log2/
+
+*.ini
+*.txt
+*.zip
