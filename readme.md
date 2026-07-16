@@ -10,6 +10,7 @@
 
 ![Language](https://img.shields.io/badge/language-C%2B%2B-00599C?logo=cplusplus&logoColor=white)
 ![Language](https://img.shields.io/badge/language-Python-00599C?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6?logo=windows&logoColor=white)
 ![Platform](https://img.shields.io/badge/platform-Linux-0078D6?logo=linux&logoColor=white)
 
@@ -180,6 +181,11 @@ Instead, it demonstrates how legitimate features of trusted cloud services may b
 | Defense Evasion     | Trusted service abuse (research focus)           |
 
 ---
+## License
+
+> MIT License
+
+---
 
 ## References
 
@@ -196,3 +202,5 @@ Instead, it demonstrates how legitimate features of trusted cloud services may b
 **Jeet Ganguly**
 
 GitHub: https://github.com/jeet-ganguly
+
+Linkedin: https://www.linkedin.com/in/jeet-ganguly-b2971531a/
