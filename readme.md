@@ -16,6 +16,12 @@
 
 ---
 
+## What is Canva-C2?
+
+Canva-C2 is a Windows-based cybersecurity research project that demonstrates how publicly accessible Canva's document embed feature can be used as a covert communication channel between a controller and a client.
+
+---
+
 > **Disclaimer**
 >
 > This repository is intended **solely for security research**. The purpose of this project is to help defenders understand how trusted cloud platforms may be abused so they can build better detection and response capabilities.
