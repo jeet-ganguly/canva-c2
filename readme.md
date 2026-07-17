@@ -101,7 +101,7 @@ HTTPS Request
      ▼
 Agent retrieves document
      │
-Extract command
+Extract command from url page's title
      │
 Execute command
      │
