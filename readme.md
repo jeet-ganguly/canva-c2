@@ -1,4 +1,4 @@
-# CanvaC2-Research
+# Canva-C2 Research
 
 > Security research exploring how publicly accessible SaaS features could potentially be misused for Command-and-Control (C2) communication.
 >
