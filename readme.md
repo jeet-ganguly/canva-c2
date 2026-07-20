@@ -67,19 +67,19 @@ If you want to research in your control environment then you can check out my po
 * Create embed url from canva document and modify in
 
 ```c
-const std::string URL = ""; //Need to change
+const std::string URL = ""; //Need to change if you are using c++ code
 ```
 ```python
-url = "" #Need to change this
+url = "" #Need to change this if you are using python code 
 ```
 
 * Create slack webhook url and modify in
 
 ```c
-std::string webhook = ""; //Change this
+std::string webhook = ""; //Change this if you are using c++ code
 ```
 ```python
-WEBHOOK_URL = "" #Chnage this
+WEBHOOK_URL = "" #Chnage this if you are using python code
 ```
 ---
 
