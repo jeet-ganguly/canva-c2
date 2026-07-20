@@ -95,6 +95,7 @@ WEBHOOK_URL = "" #Chnage this if you are using python code
 ---
 
 ## Compilation (Ubuntu)
+> Steps to compile the c++ program into exe from ubuntu.
 
 Step 1: Update package lists
 ```c
