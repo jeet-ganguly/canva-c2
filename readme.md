@@ -94,6 +94,53 @@ WEBHOOK_URL = "" #Chnage this if you are using python code
 ```
 ---
 
+## Compilation (Ubuntu)
+
+Step 1: Update package lists
+
+sudo apt update
+
+Step 2: Install required dependencies
+
+sudo apt install mingw-w64 build-essential autoconf libtool pkg-config -y
+
+Step 3: Navigate to the libcurl source directory
+
+cd ~/curl-8.10.1
+
+Step 4: Configure libcurl for MinGW-w64
+
+./configure --host=x86_64-w64-mingw32 \
+    --prefix=$HOME/mingw-curl \
+    --with-schannel \
+    --disable-shared \
+    --enable-static \
+    --without-libpsl \
+    --disable-ldap \
+    --disable-ldaps
+
+Step 5: Clean previous build files
+
+make clean
+
+Step 6: Build libcurl
+
+make -j$(nproc)
+
+Step 7: Install libcurl
+
+make install
+
+Step 8: Cross-compile the program
+
+x86_64-w64-mingw32-g++ -DCURL_STATICLIB c2-agent.cpp -o c2-agent.exe \
+    -I$HOME/mingw-curl/include \
+    -L$HOME/mingw-curl/lib \
+    -static-libgcc -static-libstdc++ -static \
+    -lcurl -lws2_32 -lcrypt32 -lbcrypt
+
+---
+
 ## Research Idea
 
 The research demonstrates a theoretical workflow where:
