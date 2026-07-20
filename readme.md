@@ -97,19 +97,20 @@ WEBHOOK_URL = "" #Chnage this if you are using python code
 ## Compilation (Ubuntu)
 
 Step 1: Update package lists
-
+```c
 sudo apt update
-
+```
 Step 2: Install required dependencies
-
+```c
 sudo apt install mingw-w64 build-essential autoconf libtool pkg-config -y
-
+```
 Step 3: Navigate to the libcurl source directory
-
+```c
 cd ~/curl-8.10.1
+```
 
 Step 4: Configure libcurl for MinGW-w64
-
+```c
 ./configure --host=x86_64-w64-mingw32 \
     --prefix=$HOME/mingw-curl \
     --with-schannel \
@@ -118,27 +119,27 @@ Step 4: Configure libcurl for MinGW-w64
     --without-libpsl \
     --disable-ldap \
     --disable-ldaps
-
+```
 Step 5: Clean previous build files
-
+```c
 make clean
-
+```
 Step 6: Build libcurl
-
+```c
 make -j$(nproc)
-
+```
 Step 7: Install libcurl
-
+```c
 make install
-
+```
 Step 8: Cross-compile the program
-
+```c
 x86_64-w64-mingw32-g++ -DCURL_STATICLIB c2-agent.cpp -o c2-agent.exe \
     -I$HOME/mingw-curl/include \
     -L$HOME/mingw-curl/lib \
     -static-libgcc -static-libstdc++ -static \
     -lcurl -lws2_32 -lcrypt32 -lbcrypt
-
+```
 ---
 
 ## Research Idea
