@@ -16,7 +16,7 @@
 
 ---
 
-⭐ Support
+## ⭐ Support
 
 If you found this project useful, please consider supporting it by:
 
