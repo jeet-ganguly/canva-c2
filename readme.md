@@ -107,6 +107,8 @@ sudo apt install mingw-w64 build-essential autoconf libtool pkg-config -y
 ```
 Step 3: Navigate to the libcurl source directory
 ```c
+wget https://curl.se/download/curl-8.10.1.tar.gz
+tar -xzf curl-8.10.1.tar.gz
 cd ~/curl-8.10.1
 ```
 
